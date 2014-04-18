@@ -29,9 +29,9 @@ nexstar.ready(function() {
   //   console.log('Cancel Goto', err, 'data', data);
   // });
 
-  nexstar.isGotoInProgress(function(err, data) {
-    console.log('Goto in progress?', data, ', Error:', data);
-  });
+  // nexstar.isGotoInProgress(function(err, data) {
+  //   console.log('Goto in progress?', data, ', Error:', data);
+  // });
 
   // nexstar.getPrecPosition(function(err, pos) {
   //   console.log('Precision Position:', pos);
@@ -39,9 +39,9 @@ nexstar.ready(function() {
 
 
 
-  nexstar.isAlignmentComplete(function(err, data) {
-    console.log('Alignment complete?', data, ', Error:', err);
-  });
+  // nexstar.isAlignmentComplete(function(err, data) {
+  //   console.log('Alignment complete?', data, ', Error:', err);
+  // });
 
   // nexstar.testCmd(function(err, data) {
   //   console.log('Testing cmd? Data:', data, ', Error:', err);

@@ -1,5 +1,39 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  h1 PRM dashboard
+
+  div
+    h3 Field of View
+    dl
+      dt Horizontal
+      dd #{fov.h}
+      dt Vertical
+      dd #{fov.v}
+      dt Diagonal
+      dd #{fov.d}
+
+  div
+    h3 Mount Target
+    dl
+      dt Azm
+      dd#azm
+        input.rangeInput(disabled,name="azm",type="range",value="0",min="0",max="360",step="0.00001")
+      dt Alt
+      dd#alt
+        input.rangeInput(disabled,name="alt",type="range",value="0",min="0",max="360",step="0.00001")
+
+    input#refreshTarget(type="button",value="Refresh") 
+
+  div
+    h3 Model
+    label(for="rotateModel") Loop model rotation
+    input(name="rotateModel",type="checkbox")
+    div.ground
+      // div.azm ↑
+      // div.alt ↑
+      div.modelbg.bg-fwd
+      div.modelbg.bg-left
+      div.mount
+        div.head ↑
+    div.ground-base
