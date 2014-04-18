@@ -28,7 +28,16 @@
     "dojo": false,
 
     // Custom predefined globals.
-    "predef": ["define"],
+    "predef": [
+        "define",
+        /* MOCHA */
+        "describe",
+        "it",
+        "before",
+        "beforeEach",
+        "after",
+        "afterEach"
+    ],
 
     // Development
 
